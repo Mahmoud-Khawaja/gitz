@@ -17,3 +17,6 @@ install_manifest.txt
 # random type shit
 *.swp
 *.log
+
+# VS Code
+.vscode/
