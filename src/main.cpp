@@ -5,6 +5,20 @@
 #include <string>
 
 
+void printHelp() {
+    std::cout << "sub niggna, welcome to gitz! The getz version control system with aura.\n\n";
+    std::cout << "Usage: gitz <command> [<args>]\n\n";
+    std::cout << "Commands:\n";
+    std::cout << "  skibidi         (like git init)\n";
+    std::cout << "  aura <file>...  (like git add)\n";
+    std::cout << "  hauktua -m \"msg\" (like git commit)\n";
+    std::cout << "  fineshyte       (like git diff)\n";
+    std::cout << "  thesigma        (like git status)\n";
+    std::cout << "  log             (like git log)\n";
+    std::cout << "  --help          Show this help message\n\n";
+    std::cout << "Happy hawktuah!\n";
+}
+
 /*
 gitz skibidi -> init repository
 
@@ -20,12 +34,17 @@ gitz log → hna 3ady b2a omal enta fakr eh
 */
 int main(int argc, char* argv[]) {
     if (argc < 2) {
-        std::cerr << "Omake btgely\n";
+        std::cerr << "omak btgely\n";
         std::cerr << "Yo, usage: gitz <command> [<args>]\n";
         return 1;
     }
 
     std::string command = argv[1];
+
+    if (command == "--help") {
+        printHelp();
+        return 0;
+    }
 
     try {
         if (command == "skibidi") {
