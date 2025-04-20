@@ -1,16 +1,13 @@
 #!/bin/bash
 set -e
 
-
 mkdir -p build
-cd build
 
+cd build
 
 cmake ..
 
-
 make
-
 
 sudo make install
 
