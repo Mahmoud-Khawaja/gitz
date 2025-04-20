@@ -8,11 +8,15 @@ find_package(OpenSSL REQUIRED)
 
 # Source files
 set(SOURCES
-    src/main.cpp
-    src/repository.cpp
-    src/object.cpp
-    src/index.cpp
-    src/commands.cpp
+    /src/repository.cpp
+    /src/index.cpp
+    /src/object_utils.cpp
+    /src/main.cpp
+    /src/tree.cpp
+    /src/commit.cpp
+    /src/object.cpp
+    /src/blob.cpp
+    /src/commands.cpp
 )
 
 add_executable(gitz ${SOURCES})
