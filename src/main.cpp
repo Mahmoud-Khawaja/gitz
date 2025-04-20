@@ -4,8 +4,23 @@
 #include <vector>
 #include <string>
 
+
+/*
+gitz skibidi -> init repository
+
+gitz aura <path> -> add to staging
+
+gitz hawktuah -m "msg" → commit staged files
+
+gitz fineshyte → show diff
+
+gitz thesigma → show status
+
+gitz log → hna 3ady b2a omal enta fakr eh 
+*/
 int main(int argc, char* argv[]) {
     if (argc < 2) {
+        std::cerr << "Omake btgely\n";
         std::cerr << "Yo, usage: gitz <command> [<args>]\n";
         return 1;
     }
@@ -20,7 +35,7 @@ int main(int argc, char* argv[]) {
 
         auto repoPath = gitz::Repository::findRepo();
         if (!repoPath) {
-            std::cerr << "Bruh, you’re not in a repo\n";
+            std::cerr << "nigga wtf you’re not in a repo\n";
             return 1;
         }
         gitz::Repository repo(*repoPath);
