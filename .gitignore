@@ -1,0 +1,19 @@
+# build 
+build/
+out/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+# object files and executables
+*.o
+*.a
+*.so
+*.exe
+
+# random type shit
+*.swp
+*.log
