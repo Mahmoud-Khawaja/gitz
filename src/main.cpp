@@ -11,7 +11,7 @@ void printHelp() {
     std::cout << "Commands:\n";
     std::cout << "  skibidi         (like git init)\n";
     std::cout << "  aura <file>...  (like git add)\n";
-    std::cout << "  hauktua -m \"msg\" (like git commit)\n";
+    std::cout << "  hawktuah -m \"msg\" (like git commit)\n";
     std::cout << "  fineshyte       (like git diff)\n";
     std::cout << "  thesigma        (like git status)\n";
     std::cout << "  log             (like git log)\n";
@@ -32,6 +32,7 @@ gitz thesigma → show status
 
 gitz log → hna 3ady b2a omal enta fakr eh 
 */
+
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         std::cerr << "omak btgely\n";
