@@ -13,7 +13,7 @@ void hawktuah(const Repository& repo, const std::string& message); // git hawktu
 void fineshyte(const Repository& repo); // git fineshyte (diff)
 void thesigma(const Repository& repo); // git thesigma (status)
 void log(const Repository& repo); // git log 3ady
-
+void config(const std::vector<std::string>& args); // setting the nigga info
 } 
 
 #endif 

@@ -1,4 +1,4 @@
-#include "repository.h"
+#include "include/repository.h"
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
@@ -43,5 +43,14 @@ namespace gitz {
     // setting absulute path
     Repository::Repository(const std::filesystem::path& root) : root_(std::filesystem::canonical(root)), gitDir_(root_ / ".gitz") {
         if (!std::filesystem::exists(gitDir_) || !std::filesystem::is_directory(gitDir_)) throw std::runtime_error("omak btgely kol talat " + root.string());
+    }
+
+    std::string Repository::getCurrentBranch() const {
+        std::filesystem::path headPath = gitDir_ / "HEAD";
+        std::ifstream headFile(headPath);
+        std::string headContent;
+        std::getline(headFile, headContent);
+        if (headContent.find("ref: ") == 0) return headContent.substr(5);  // this will be something like "refs/heads/main"
+        return "HEAD detached";
     }
 }

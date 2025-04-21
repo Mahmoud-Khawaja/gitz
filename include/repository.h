@@ -21,6 +21,7 @@ public:
 
     std::filesystem::path getRoot() const { return root_; }
     std::filesystem::path getGitDir() const { return gitDir_; }
+    std::string getCurrentBranch() const;
 };
 
 } 

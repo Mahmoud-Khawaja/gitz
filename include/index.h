@@ -6,7 +6,7 @@
 #include <string>
 
 namespace gitz {
-
+// staging area 
 class Index {
 public:
     explicit Index(const std::filesystem::path& gitDir);
@@ -16,6 +16,7 @@ public:
     void removeFile(const std::filesystem::path& filePath);
     const std::map<std::string, std::string>& getEntries() const { return entries_; }
     void clear();
+    bool isFileStaged(const std::filesystem::path& filePath) const;
 
 private:
     std::filesystem::path indexPath_;

@@ -1,5 +1,5 @@
-#include "repository.h"
-#include "commands.h"
+#include "include/repository.h"
+#include "include/commands.h"
 #include <iostream>
 #include <vector>
 #include <string>

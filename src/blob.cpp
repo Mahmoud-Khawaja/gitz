@@ -1,4 +1,4 @@
-#include "blob.h"
+#include "include/blob.h"
 
 namespace gitz {
 

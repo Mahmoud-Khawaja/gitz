@@ -14,7 +14,6 @@ set(SOURCES
     /src/main.cpp
     /src/tree.cpp
     /src/commit.cpp
-    /src/object.cpp
     /src/blob.cpp
     /src/commands.cpp
 )
